@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    z-index: 10;
+}
+
+
+.logo {
+    position:absolute;
+    left: 0;
+    top: 0;
+    margin-left: 40px;
+    z-index: 1;
+}
+
+.logo a{
+    width: max-content;
+}
+
+.failed{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#failed-head{
+    width: max-content;
+    padding: 10px 40px;
+    border-radius: 99px;
+    background-color: #ccc;
+}
+
+.logo img {
+    width: 130px;
+    height: 80px;  
+}
+
+@media (max-width: 600px) {
+    .logo {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .logo img {
+        width: 120px;
+        height: 120px; 
+    }
+}
+
+.btns-container{
+    display: flex;
+    gap: 14px;
+}
+
+.btns-container a{
+	text-decoration: none;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.btns-container #fst,
+.btns-container #snd{
+	background: #e5edfb;
+	padding: 10px 25px;
+	border-radius: 8px;
+	color: #115087;
+	font-size: 16px;
+}
+
+.btns-container #fst:hover,
+.btns-container #snd:hover{      
+	padding: 10px 25px;
+	background: #115087;
+    border-radius: 8px;
+	color: #fff;
+	font-size: 16px;
+}
